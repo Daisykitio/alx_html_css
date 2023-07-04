@@ -4,6 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daisy's Webpage</title>
+  <style>
+    /* CSS styles for the FAQ section */
+    #faq {
+      margin-top: 20px;
+    }
+
+    .row-block {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .item-block {
+      flex-basis: calc(50% - 10px);
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .item-block h3 {
+      margin-top: 0;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -207,6 +230,30 @@
         </div>
       </section>
 
+      <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>Question 1</h3>
+            <p>Answer to question 1</p>
+          </div>
+          <div class="item-block">
+            <h3>Question 2</h3>
+            <p>Answer to question 2</p>
+          </div>
+        </div>
+        <div class="row-block">
+          <div class="item-block">
+            <h3>Question 3</h3>
+            <p>Answer to question 3</p>
+          </div>
+          <div class="item-block">
+            <h3>Question 4</h3>
+            <p>Answer to question 4</p>
+          </div>
+        </div>
+      </section>
+
   </main>
 
 </body>
@@ -214,5 +261,16 @@
 
   </main>
   
+  <script>
+    // JavaScript code to toggle visibility of answer when clicking on the question
+    const questions = document.querySelectorAll('#faq .item-block h3');
+
+    questions.forEach(question => {
+      question.addEventListener('click', () => {
+        const answer = question.nextElementSibling;
+        answer.classList.toggle('show-answer');
+      });
+    });
+  </script>
 </body>
 </html>
