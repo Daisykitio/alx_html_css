@@ -1,20 +1,44 @@
+header {
+  background-color: #c1c0c0;
+  color: #a75f82;
+}
 body {
     display: flex;
     flex-direction: column;
+    background-color: #4dab63;
   }
   
   main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    background-color:  #800080;
   }
   
   article {
     flex: 2;
     overflow-y: auto;
+    border: 1px solid #ccc;
   }
   
   aside {
     flex: 1;
     overflow-y: auto;
+    background-color: #e0f409;
   }
+
+  
+  footer {
+    background-color: #cf680e;
+    color: #fff;
+  }
+
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #79a3ba;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  `
