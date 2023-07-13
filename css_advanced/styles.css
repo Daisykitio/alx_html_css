@@ -252,4 +252,48 @@ section#faq .item-block h3::before {
 section#faq .item-block p::before {
   content: "A: ";
   font-weight: bold;
+
 }
+
+ /* Footer */
+footer {
+    background-color: #121212;
+    color: #FFFFFF;
+    padding: 40px;
+  }
+
+  footer .global-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  footer .row-block {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  footer img {
+    width: 80px;
+    border-radius: 50%;
+  }
+
+  footer .block {
+    max-width: 400px;
+  }
+
+  footer p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
