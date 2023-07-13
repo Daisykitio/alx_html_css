@@ -202,3 +202,54 @@ section div.membership button {
 section div.membership button:hover {
   background-color: #E45747;
 }
+
+/* FAQ Section */
+section#faq {
+  margin-bottom: 80px;
+}
+
+section#faq h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section#faq .row-block {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+section#faq .item-block {
+  width: 300px;
+  text-align: center;
+}
+
+section#faq h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #121212;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+section#faq p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+section#faq .item-block p {
+  margin-bottom: 20px;
+}
+
+section#faq .item-block h3::before {
+  content: "Q: ";
+}
+
+section#faq .item-block p::before {
+  content: "A: ";
+  font-weight: bold;
+}
