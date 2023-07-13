@@ -112,3 +112,43 @@ header {
   section .cta-button:hover {
     background-color: #E45747;
   }
+  /* Quote Section */
+section div.quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+section div.quote img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+section div.quote > div {
+  max-width: 500px;
+  text-align: center;
+}
+
+section div.quote q {
+  font-size: 24px;
+  font-weight: bold;
+  color: #121212;
+  margin-bottom: 20px;
+}
+
+section div.quote p {
+  font-size: 16px;
+  color: #555555;
+  line-height: 1.5;
+}
+
+section div.quote p.author {
+  margin-top: 20px;
+  color: #777777;
+}
+
+section div.quote p.author:before {
+  content: "- ";
+}
